@@ -74,7 +74,7 @@ width: 80%;
     color: black;
 }
 section{
-    margin: 50px 100px;
+    margin: 50px 0;
 }
 
 /* #sug-section{
@@ -82,8 +82,8 @@ section{
 } */
 
 #sug-section h1{
-font-size: 35px;
-font-weight: bold;
+font-size: 36px;
+font-weight: 700;
  font-family: "Open Sans", sans-serif;
 }
 
@@ -97,10 +97,64 @@ font-weight: bold;
     height: auto;
     border-radius: 8px;
 }
+.card h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+.card p{
+font-size: 13px;
+}
 .card button{
-display: inline;
+display: start;
+width: 20%;
 border-radius: 20px;
-font-size: 15px;
+padding: 5px 7px;
+font-size: 13px;
 background-color: #fff;
 color: #000;
+border: none;
+}
+
+.adv-section h1{
+    font-size: 36px;
+font-weight: 700;
+line-height: 40px;
+ font-family: "Open Sans", sans-serif;
+}
+.sec-heading{
+    font-size: 32px;
+font-weight: bold;
+line-height: 40px;
+ font-family: "Open Sans", sans-serif;
+}
+.adv-parent{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.adv-child{
+   display: grid; 
+   grid-template-rows: auto auto;
+   
+}
+.adv-img{
+width: 100%;
+}
+.adv-content{
+padding: 20px;
+}
+.adv-content h3{
+    font-size: 18px;
+}
+.adv-content p{
+    font-size: 15px;
+}
+.adv-content button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
 }
