@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uber-clone</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <!-- link:favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJIOGtHi6yLhWs9gI0Bz1T83KoUzuqCQ7IQ&s"
+      type="image/x-icon"
+    />
+
+    <!-- fontawsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- aos animation -->
+    <!-- css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- bootstap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="topbar navbar navbar-expand-lg px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-4 text-light" href="#">Uber </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item tex">
+                <a class="nav-link active" aria-current="page" href="#">Ride</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Drive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Business</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu bg-light text-dark">
+                  <li><a class="dropdown-item" href="#">Our Offerings</a></li>
+                  <li><a class="dropdown-item" href="#">How uber works</a></li>
+                  <li><a class="dropdown-item" href="#">Explore</a></li>
+                  <li><a class="dropdown-item" href="#">Newsroom</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+            <ul
+              class="navbar-nav me-3 my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="fa-solid fa-globe"></i> EN</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log in</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-light rounded-pill">Sign up</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div id="banner-parent">
+        <div class="box-content">
+          <h1>Request a ride for now or later</h1>
+          <div class="sub-content">
+            <b>Up to 50% off your first 5 Uber rides.</b>T&Cs apply.*<br />
+            *Valid within 15 days of signup.
+          </div>
+          <form class="form">
+            <input
+              class="form-field"
+              type="text"
+              id="location"
+              placeholder="Enter location"
+            />
+            <br />
+            <input
+              class="form-field"
+              type="text"
+              name="destination"
+              id="destination"
+              placeholder="Enter Destination"
+            />
+            <br />
+            <button class="btn-detail" id="btn-black">See Prices</button>
+            <button class="btn-detail" id="btn-light">
+              Schedule for later
+            </button>
+          </form>
+        </div>
+
+        <div class="box-images">
+          <img src="./assets/uber-banner-img.webp" alt="Image of banner" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="sug-section">
+        <h1 class="py-3">Suggesions</h1>
+        <div id="parent">
+          <div class="card" style="padding: 10px 10px">
+            <h4 style="margin-left: 10px">Ride</h4>
+            <div style="display: flex; justify-content: space-between">
+              <p>rtgujk jhkonk bnbnj</p>
+              <img
+                style="width: 25%"
+                src="./assets/top_bar_rides_3d.png"
+                alt="card-img"
+              />
+            </div>
+            <button>Details</button>
+          </div>
+          <div class="card" style="padding: 10px 10px">
+            <h4 style="margin-left: 10px">Ride</h4>
+            <div style="display: flex; justify-content: space-between">
+              <p>rtgujk jhkonk bnbnj</p>
+              <img
+                style="width: 25%"
+                src="./assets/top_bar_rides_3d.png"
+                alt="card-img"
+              />
+            </div>
+            <button>Details</button>
+          </div>
+          <div class="card" style="padding: 10px 10px">
+            <h4 style="margin-left: 10px">Ride</h4>
+            <div style="display: flex; justify-content: space-between">
+              <p>rtgujk jhkonk bnbnj</p>
+              <img
+                style="width: 25%"
+                src="./assets/top_bar_rides_3d.png"
+                alt="card-img"
+              />
+            </div>
+            <button>Details</button>
+          </div>
+          <div class="card" style="padding: 10px 10px">
+            <h4 style="margin-left: 10px">Ride</h4>
+            <div style="display: flex; justify-content: space-between">
+              <p>rtgujk jhkonk bnbnj</p>
+              <img
+                style="width: 25%"
+                src="./assets/top_bar_rides_3d.png"
+                alt="card-img"
+              />
+            </div>
+            <button>Details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

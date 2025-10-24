@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+   font-family: "Inter", sans-serif;
+}
+.topbar{
+background-color: #000 !important;
+
+}
+.nav-link{
+    color: #fff !important;
+    font-size: 15px !important;
+}
+html{
+    scroll-behavior:smooth;
+}
+/* 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color:#fff;
+} */
+
+#banner-parent{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 20px;
+}
+#banner-parent .box-content{
+   
+    padding: 10px;
+    
+}
+.box-content h1{
+    font-size: 52px;
+    font-weight: bold;
+    color: #000;
+     margin-bottom: 30px;
+}
+.sub-content {
+    font-size: 15px;
+}
+.form{
+   color: #ffffffca;
+    margin: 20px 0;
+}
+
+.form-field{
+padding: 10px 20px;
+display: block;
+width: 80%;
+}
+
+.btn-detail{
+  padding: 10px 15px;  
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+#btn-black{
+    background-color: #000;
+    color: #fff;
+}
+
+#btn-light{
+    background-color: #ffffffca;
+    color: black;
+}
+section{
+    margin: 50px 100px;
+}
+
+/* #sug-section{
+   
+} */
+
+#sug-section h1{
+font-size: 35px;
+font-weight: bold;
+ font-family: "Open Sans", sans-serif;
+}
+
+#parent{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+}
+.card{
+    background-color: rgba(146, 140, 131, 0.898);
+    height: auto;
+    border-radius: 8px;
+}
+.card button{
+display: inline;
+border-radius: 20px;
+font-size: 15px;
+background-color: #fff;
+color: #000;
+}
